@@ -1,0 +1,421 @@
+[0m10:53:18.605169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026778376660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026774036E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677A4EFED0>]}
+
+
+============================== 10:53:18.610014 | 49f56454-a7a9-42a2-8be2-eaec7cd49cff ==============================
+[0m10:53:18.610014 [info ] [MainThread]: Running with dbt=1.10.11
+[0m10:53:18.610649 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Harsh\\Desktop\\Projects-R\\finance_pipeline_project\\dbt_project\\finance_dbt\\logs', 'profiles_dir': 'C:\\Users\\Harsh\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m10:53:18.798710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '49f56454-a7a9-42a2-8be2-eaec7cd49cff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026778871480>]}
+[0m10:53:18.852452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '49f56454-a7a9-42a2-8be2-eaec7cd49cff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677938B350>]}
+[0m10:53:18.854530 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m10:53:19.182733 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m10:53:19.183799 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:53:19.184305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '49f56454-a7a9-42a2-8be2-eaec7cd49cff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267793AB650>]}
+[0m10:53:20.850107 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m10:53:20.851352 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_second_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m10:53:21.059652 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.finance_dbt.fraud_flags.' (models\example\fraud_flags..sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m10:53:21.061315 [debug] [MainThread]: Command `dbt run` failed at 10:53:21.061172 after 2.68 seconds
+[0m10:53:21.061708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677ADCEE40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677ADCC9B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002677AF8D1D0>]}
+[0m10:53:21.062040 [debug] [MainThread]: Flushing usage events
+[0m10:53:22.259397 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:54:51.545443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51DD96660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D519A86E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EF3FED0>]}
+
+
+============================== 10:54:51.550198 | 24af9609-2a3e-40fa-baff-aa1b5c2e337a ==============================
+[0m10:54:51.550198 [info ] [MainThread]: Running with dbt=1.10.11
+[0m10:54:51.550825 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Harsh\\Desktop\\Projects-R\\finance_pipeline_project\\dbt_project\\finance_dbt\\logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\Harsh\\.dbt'}
+[0m10:54:51.709950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51E285480>]}
+[0m10:54:51.765077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EDAF350>]}
+[0m10:54:51.766589 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m10:54:52.063887 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m10:54:52.065045 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:54:52.065571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EDCB650>]}
+[0m10:54:52.825852 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m10:54:52.828055 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_second_dbt_model' in the 'models' section of file 'models\example\schema.yml'
+[0m10:54:53.036031 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.finance_dbt.unique_my_first_dbt_model_id.16e066b321' (models\example\schema.yml) depends on a node named 'my_first_dbt_model' in package '' which was not found
+[0m10:54:53.036622 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.finance_dbt.not_null_my_first_dbt_model_id.5fb22c2710' (models\example\schema.yml) depends on a node named 'my_first_dbt_model' in package '' which was not found
+[0m10:54:53.037091 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.finance_dbt.unique_my_second_dbt_model_id.57a0f8c493' (models\example\schema.yml) depends on a node named 'my_second_dbt_model' in package '' which was not found
+[0m10:54:53.037546 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.finance_dbt.not_null_my_second_dbt_model_id.151b76d778' (models\example\schema.yml) depends on a node named 'my_second_dbt_model' in package '' which was not found
+[0m10:54:53.101594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51FF77C50>]}
+[0m10:54:53.156060 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\manifest.json
+[0m10:54:53.174084 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\semantic_manifest.json
+[0m10:54:53.223611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D52003A350>]}
+[0m10:54:53.224112 [info ] [MainThread]: Found 2 models, 416 macros
+[0m10:54:53.224579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D52077BAD0>]}
+[0m10:54:53.226071 [info ] [MainThread]: 
+[0m10:54:53.226506 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:54:53.226941 [info ] [MainThread]: 
+[0m10:54:53.227576 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m10:54:53.232034 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_finance'
+[0m10:54:54.708861 [debug] [ThreadPool]: Using sqlite connection "list_finance"
+[0m10:54:54.709356 [debug] [ThreadPool]: On list_finance: BEGIN
+[0m10:54:54.709610 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:54:54.710639 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:54:54.711027 [debug] [ThreadPool]: Using sqlite connection "list_finance"
+[0m10:54:54.711311 [debug] [ThreadPool]: On list_finance: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "connection_name": "list_finance"} */
+
+        pragma database_list
+    
+[0m10:54:54.711587 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:54:54.712809 [debug] [ThreadPool]: On list_finance: ROLLBACK
+[0m10:54:54.713242 [debug] [ThreadPool]: On list_finance: Close
+[0m10:54:54.714681 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_finance_main'
+[0m10:54:54.720708 [debug] [ThreadPool]: Using sqlite connection "list_finance_main"
+[0m10:54:54.721019 [debug] [ThreadPool]: On list_finance_main: BEGIN
+[0m10:54:54.721256 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:54:54.722096 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m10:54:54.722379 [debug] [ThreadPool]: Using sqlite connection "list_finance_main"
+[0m10:54:54.722627 [debug] [ThreadPool]: On list_finance_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "connection_name": "list_finance_main"} */
+
+        pragma database_list
+    
+[0m10:54:54.722873 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:54:54.723923 [debug] [ThreadPool]: Using sqlite connection "list_finance_main"
+[0m10:54:54.724185 [debug] [ThreadPool]: On list_finance_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "connection_name": "list_finance_main"} */
+
+            SELECT
+                'finance' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m10:54:54.724718 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m10:54:54.725755 [debug] [ThreadPool]: On list_finance_main: ROLLBACK
+[0m10:54:54.726047 [debug] [ThreadPool]: On list_finance_main: Close
+[0m10:54:54.726719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D520C2C890>]}
+[0m10:54:54.727195 [debug] [MainThread]: Using sqlite connection "master"
+[0m10:54:54.727521 [debug] [MainThread]: On master: BEGIN
+[0m10:54:54.727807 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:54:54.728447 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m10:54:54.728713 [debug] [MainThread]: On master: COMMIT
+[0m10:54:54.728960 [debug] [MainThread]: Using sqlite connection "master"
+[0m10:54:54.729284 [debug] [MainThread]: On master: COMMIT
+[0m10:54:54.729518 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:54:54.729821 [debug] [MainThread]: On master: Close
+[0m10:54:54.758955 [debug] [Thread-1 (]: Began running node model.finance_dbt.fraud_flags
+[0m10:54:54.759518 [info ] [Thread-1 (]: 1 of 2 START sql view model main.fraud_flags ................................... [RUN]
+[0m10:54:54.760207 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.finance_dbt.fraud_flags'
+[0m10:54:54.760569 [debug] [Thread-1 (]: Began compiling node model.finance_dbt.fraud_flags
+[0m10:54:54.765773 [debug] [Thread-1 (]: Writing injected SQL for node "model.finance_dbt.fraud_flags"
+[0m10:54:54.767767 [debug] [Thread-1 (]: Began executing node model.finance_dbt.fraud_flags
+[0m10:54:54.780146 [debug] [Thread-1 (]: Writing runtime sql for node "model.finance_dbt.fraud_flags"
+[0m10:54:54.782519 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m10:54:54.782950 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: BEGIN
+[0m10:54:54.783255 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:54:54.784050 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:54:54.784359 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m10:54:54.784663 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "node_id": "model.finance_dbt.fraud_flags"} */
+
+    
+    create view main."fraud_flags" as
+    with base as (
+    select
+        transaction_id,
+        account_id,
+        amount,
+        timestamp,
+        case when amount > 5000 then 1 else 0 end as high_value_flag
+    from transactions
+),
+
+daily_activity as (
+    select
+        account_id,
+        date(timestamp) as txn_date,
+        count(*) as txn_count
+    from transactions
+    group by account_id, txn_date
+)
+
+select
+    b.*,
+    da.txn_count,
+    case when da.txn_count > 3 then 1 else 0 end as rapid_transactions_flag
+from base b
+left join daily_activity da
+on b.account_id = da.account_id and date(b.timestamp) = da.txn_date;
+[0m10:54:54.786373 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:54:54.791514 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: COMMIT
+[0m10:54:54.791985 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m10:54:54.792278 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: COMMIT
+[0m10:54:54.795890 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m10:54:54.798816 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: Close
+[0m10:54:54.801562 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D520A81910>]}
+[0m10:54:54.802253 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main.fraud_flags .............................. [[32mOK[0m in 0.04s]
+[0m10:54:54.803162 [debug] [Thread-1 (]: Finished running node model.finance_dbt.fraud_flags
+[0m10:54:54.803638 [debug] [Thread-1 (]: Began running node model.finance_dbt.spending_aggregations
+[0m10:54:54.804223 [info ] [Thread-1 (]: 2 of 2 START sql view model main.spending_aggregations ......................... [RUN]
+[0m10:54:54.804818 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.finance_dbt.fraud_flags, now model.finance_dbt.spending_aggregations)
+[0m10:54:54.805134 [debug] [Thread-1 (]: Began compiling node model.finance_dbt.spending_aggregations
+[0m10:54:54.806785 [debug] [Thread-1 (]: Writing injected SQL for node "model.finance_dbt.spending_aggregations"
+[0m10:54:54.807655 [debug] [Thread-1 (]: Began executing node model.finance_dbt.spending_aggregations
+[0m10:54:54.809438 [debug] [Thread-1 (]: Writing runtime sql for node "model.finance_dbt.spending_aggregations"
+[0m10:54:54.810721 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m10:54:54.811098 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: BEGIN
+[0m10:54:54.811404 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:54:54.813033 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:54:54.813358 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m10:54:54.813682 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "node_id": "model.finance_dbt.spending_aggregations"} */
+
+    
+    create view main."spending_aggregations" as
+    with base as (
+    select
+        account_id,
+        date(timestamp) as txn_date,
+        strftime('%Y-%m', timestamp) as month,
+        strftime('%Y', timestamp) as year,
+        amount
+    from transactions
+)
+
+select
+    account_id,
+    year,
+    month,
+    sum(amount) as total_monthly_spending,
+    avg(amount) as avg_transaction
+from base
+group by account_id, year, month;
+[0m10:54:54.815285 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:54:54.816555 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: COMMIT
+[0m10:54:54.816916 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m10:54:54.817221 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: COMMIT
+[0m10:54:54.820123 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:54:54.820982 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: Close
+[0m10:54:54.821782 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '24af9609-2a3e-40fa-baff-aa1b5c2e337a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D520D23BB0>]}
+[0m10:54:54.822719 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main.spending_aggregations .................... [[32mOK[0m in 0.02s]
+[0m10:54:54.823477 [debug] [Thread-1 (]: Finished running node model.finance_dbt.spending_aggregations
+[0m10:54:54.825125 [debug] [MainThread]: Using sqlite connection "master"
+[0m10:54:54.825469 [debug] [MainThread]: On master: BEGIN
+[0m10:54:54.825719 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:54:54.827405 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m10:54:54.827764 [debug] [MainThread]: On master: COMMIT
+[0m10:54:54.828027 [debug] [MainThread]: Using sqlite connection "master"
+[0m10:54:54.828321 [debug] [MainThread]: On master: COMMIT
+[0m10:54:54.828600 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:54:54.828874 [debug] [MainThread]: On master: Close
+[0m10:54:54.829322 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:54:54.829585 [debug] [MainThread]: Connection 'list_finance' was properly closed.
+[0m10:54:54.829796 [debug] [MainThread]: Connection 'list_finance_main' was properly closed.
+[0m10:54:54.830002 [debug] [MainThread]: Connection 'model.finance_dbt.spending_aggregations' was properly closed.
+[0m10:54:54.830291 [info ] [MainThread]: 
+[0m10:54:54.830760 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 1.60 seconds (1.60s).
+[0m10:54:54.831785 [debug] [MainThread]: Command end result
+[0m10:54:54.847428 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\manifest.json
+[0m10:54:54.850191 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\semantic_manifest.json
+[0m10:54:54.856086 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\run_results.json
+[0m10:54:54.856491 [info ] [MainThread]: 
+[0m10:54:54.857075 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:54:54.857604 [info ] [MainThread]: 
+[0m10:54:54.858119 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m10:54:54.859636 [debug] [MainThread]: Command `dbt run` succeeded at 10:54:54.859521 after 3.53 seconds
+[0m10:54:54.859975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D520004550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EF27CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D51EF6D6A0>]}
+[0m10:54:54.860310 [debug] [MainThread]: Flushing usage events
+[0m10:54:56.076705 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:35:38.554497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E07866660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E03546E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E08A0FED0>]}
+
+
+============================== 11:35:38.560184 | fb13ceff-25ad-4a03-b7d5-01aa36190d7e ==============================
+[0m11:35:38.560184 [info ] [MainThread]: Running with dbt=1.10.11
+[0m11:35:38.560900 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Harsh\\Desktop\\Projects-R\\finance_pipeline_project\\dbt_project\\finance_dbt\\logs', 'profiles_dir': 'C:\\Users\\Harsh\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m11:35:38.802342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E07D55480>]}
+[0m11:35:38.857572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E08887350>]}
+[0m11:35:38.859228 [info ] [MainThread]: Registered adapter: sqlite=1.10.0
+[0m11:35:39.272866 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m11:35:40.279670 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:35:40.280031 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:35:40.309121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A235E50>]}
+[0m11:35:40.365258 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\manifest.json
+[0m11:35:40.368155 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\semantic_manifest.json
+[0m11:35:40.406099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E070935C0>]}
+[0m11:35:40.406736 [info ] [MainThread]: Found 2 models, 416 macros
+[0m11:35:40.407192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E089E4E50>]}
+[0m11:35:40.408747 [info ] [MainThread]: 
+[0m11:35:40.409109 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:35:40.409436 [info ] [MainThread]: 
+[0m11:35:40.409906 [debug] [MainThread]: Acquiring new sqlite connection 'master'
+[0m11:35:40.414481 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_finance'
+[0m11:35:42.673144 [debug] [ThreadPool]: Using sqlite connection "list_finance"
+[0m11:35:42.673604 [debug] [ThreadPool]: On list_finance: BEGIN
+[0m11:35:42.673849 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:35:42.678161 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m11:35:42.678444 [debug] [ThreadPool]: Using sqlite connection "list_finance"
+[0m11:35:42.678678 [debug] [ThreadPool]: On list_finance: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "connection_name": "list_finance"} */
+
+        pragma database_list
+    
+[0m11:35:42.679189 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:35:42.680221 [debug] [ThreadPool]: On list_finance: ROLLBACK
+[0m11:35:42.680481 [debug] [ThreadPool]: On list_finance: Close
+[0m11:35:42.682307 [debug] [ThreadPool]: Acquiring new sqlite connection 'list_finance_main'
+[0m11:35:42.688273 [debug] [ThreadPool]: Using sqlite connection "list_finance_main"
+[0m11:35:42.688563 [debug] [ThreadPool]: On list_finance_main: BEGIN
+[0m11:35:42.688794 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:35:42.689559 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:35:42.689797 [debug] [ThreadPool]: Using sqlite connection "list_finance_main"
+[0m11:35:42.690023 [debug] [ThreadPool]: On list_finance_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "connection_name": "list_finance_main"} */
+
+        pragma database_list
+    
+[0m11:35:42.690246 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:35:42.691220 [debug] [ThreadPool]: Using sqlite connection "list_finance_main"
+[0m11:35:42.691489 [debug] [ThreadPool]: On list_finance_main: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "connection_name": "list_finance_main"} */
+
+            SELECT
+                'finance' as database
+                ,name
+                ,'main' AS schema
+                ,type as data_type
+            FROM
+                main.sqlite_master
+            WHERE
+                name NOT LIKE 'sqlite_%'
+        
+[0m11:35:42.694186 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m11:35:42.695069 [debug] [ThreadPool]: On list_finance_main: ROLLBACK
+[0m11:35:42.695325 [debug] [ThreadPool]: On list_finance_main: Close
+[0m11:35:42.696713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A573EE0>]}
+[0m11:35:42.697154 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:35:42.697442 [debug] [MainThread]: On master: BEGIN
+[0m11:35:42.697715 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:35:42.698230 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:35:42.698461 [debug] [MainThread]: On master: COMMIT
+[0m11:35:42.698683 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:35:42.698885 [debug] [MainThread]: On master: COMMIT
+[0m11:35:42.699098 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:35:42.699410 [debug] [MainThread]: On master: Close
+[0m11:35:42.704240 [debug] [Thread-1 (]: Began running node model.finance_dbt.fraud_flags
+[0m11:35:42.704787 [info ] [Thread-1 (]: 1 of 2 START sql view model main.fraud_flags ................................... [RUN]
+[0m11:35:42.705495 [debug] [Thread-1 (]: Acquiring new sqlite connection 'model.finance_dbt.fraud_flags'
+[0m11:35:42.705830 [debug] [Thread-1 (]: Began compiling node model.finance_dbt.fraud_flags
+[0m11:35:42.710804 [debug] [Thread-1 (]: Writing injected SQL for node "model.finance_dbt.fraud_flags"
+[0m11:35:42.712123 [debug] [Thread-1 (]: Began executing node model.finance_dbt.fraud_flags
+[0m11:35:42.726035 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m11:35:42.726468 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "node_id": "model.finance_dbt.fraud_flags"} */
+drop view if exists "main"."fraud_flags"
+[0m11:35:42.726768 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:35:42.731916 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m11:35:42.736045 [debug] [Thread-1 (]: Writing runtime sql for node "model.finance_dbt.fraud_flags"
+[0m11:35:42.737419 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m11:35:42.737836 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: BEGIN
+[0m11:35:42.738148 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:35:42.738420 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m11:35:42.738710 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "node_id": "model.finance_dbt.fraud_flags"} */
+
+    
+    create view main."fraud_flags" as
+    with base as (
+    select
+        transaction_id,
+        account_id,
+        amount,
+        timestamp,
+        case when amount > 5000 then 1 else 0 end as high_value_flag
+    from transactions
+),
+
+daily_activity as (
+    select
+        account_id,
+        date(timestamp) as txn_date,
+        count(*) as txn_count
+    from transactions
+    group by account_id, txn_date
+)
+
+select
+    b.*,
+    da.txn_count,
+    case when da.txn_count > 3 then 1 else 0 end as rapid_transactions_flag
+from base b
+left join daily_activity da
+on b.account_id = da.account_id and date(b.timestamp) = da.txn_date;
+[0m11:35:42.740542 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:35:42.745702 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: COMMIT
+[0m11:35:42.746064 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.fraud_flags"
+[0m11:35:42.746358 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: COMMIT
+[0m11:35:42.749289 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:35:42.751662 [debug] [Thread-1 (]: On model.finance_dbt.fraud_flags: Close
+[0m11:35:42.753964 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A7141D0>]}
+[0m11:35:42.754690 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main.fraud_flags .............................. [[32mOK[0m in 0.05s]
+[0m11:35:42.755456 [debug] [Thread-1 (]: Finished running node model.finance_dbt.fraud_flags
+[0m11:35:42.755829 [debug] [Thread-1 (]: Began running node model.finance_dbt.spending_aggregations
+[0m11:35:42.756326 [info ] [Thread-1 (]: 2 of 2 START sql view model main.spending_aggregations ......................... [RUN]
+[0m11:35:42.756803 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.finance_dbt.fraud_flags, now model.finance_dbt.spending_aggregations)
+[0m11:35:42.757101 [debug] [Thread-1 (]: Began compiling node model.finance_dbt.spending_aggregations
+[0m11:35:42.758367 [debug] [Thread-1 (]: Writing injected SQL for node "model.finance_dbt.spending_aggregations"
+[0m11:35:42.759166 [debug] [Thread-1 (]: Began executing node model.finance_dbt.spending_aggregations
+[0m11:35:42.761911 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m11:35:42.762480 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "node_id": "model.finance_dbt.spending_aggregations"} */
+drop view if exists "main"."spending_aggregations"
+[0m11:35:42.762776 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:35:42.769057 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m11:35:42.770413 [debug] [Thread-1 (]: Writing runtime sql for node "model.finance_dbt.spending_aggregations"
+[0m11:35:42.771542 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m11:35:42.771947 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: BEGIN
+[0m11:35:42.772295 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:35:42.772567 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m11:35:42.772901 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "finance_dbt", "target_name": "dev", "node_id": "model.finance_dbt.spending_aggregations"} */
+
+    
+    create view main."spending_aggregations" as
+    with base as (
+    select
+        account_id,
+        date(timestamp) as txn_date,
+        strftime('%Y-%m', timestamp) as month,
+        strftime('%Y', timestamp) as year,
+        amount
+    from transactions
+)
+
+select
+    account_id,
+    year,
+    month,
+    sum(amount) as total_monthly_spending,
+    avg(amount) as avg_transaction
+from base
+group by account_id, year, month;
+[0m11:35:42.774707 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:35:42.775953 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: COMMIT
+[0m11:35:42.776302 [debug] [Thread-1 (]: Using sqlite connection "model.finance_dbt.spending_aggregations"
+[0m11:35:42.776617 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: COMMIT
+[0m11:35:42.779553 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m11:35:42.780627 [debug] [Thread-1 (]: On model.finance_dbt.spending_aggregations: Close
+[0m11:35:42.781275 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fb13ceff-25ad-4a03-b7d5-01aa36190d7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A43D4F0>]}
+[0m11:35:42.781848 [info ] [Thread-1 (]: 2 of 2 OK created sql view model main.spending_aggregations .................... [[32mOK[0m in 0.02s]
+[0m11:35:42.782500 [debug] [Thread-1 (]: Finished running node model.finance_dbt.spending_aggregations
+[0m11:35:42.783904 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:35:42.784249 [debug] [MainThread]: On master: BEGIN
+[0m11:35:42.784513 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:35:42.786513 [debug] [MainThread]: SQL status: OK in 0.002 seconds
+[0m11:35:42.786936 [debug] [MainThread]: On master: COMMIT
+[0m11:35:42.787317 [debug] [MainThread]: Using sqlite connection "master"
+[0m11:35:42.787654 [debug] [MainThread]: On master: COMMIT
+[0m11:35:42.788036 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:35:42.788309 [debug] [MainThread]: On master: Close
+[0m11:35:42.788775 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:35:42.789035 [debug] [MainThread]: Connection 'list_finance' was properly closed.
+[0m11:35:42.789284 [debug] [MainThread]: Connection 'list_finance_main' was properly closed.
+[0m11:35:42.789517 [debug] [MainThread]: Connection 'model.finance_dbt.spending_aggregations' was properly closed.
+[0m11:35:42.789881 [info ] [MainThread]: 
+[0m11:35:42.790402 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 2.38 seconds (2.38s).
+[0m11:35:42.791476 [debug] [MainThread]: Command end result
+[0m11:35:42.810815 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\manifest.json
+[0m11:35:42.814142 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\semantic_manifest.json
+[0m11:35:42.820940 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Harsh\Desktop\Projects-R\finance_pipeline_project\dbt_project\finance_dbt\target\run_results.json
+[0m11:35:42.821371 [info ] [MainThread]: 
+[0m11:35:42.821930 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:35:42.822362 [info ] [MainThread]: 
+[0m11:35:42.822790 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m11:35:42.824018 [debug] [MainThread]: Command `dbt run` succeeded at 11:35:42.823916 after 4.52 seconds
+[0m11:35:42.824347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A69E850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A3FA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017E0A2CBDD0>]}
+[0m11:35:42.824659 [debug] [MainThread]: Flushing usage events
+[0m11:35:44.047080 [debug] [MainThread]: An error was encountered while trying to flush usage events

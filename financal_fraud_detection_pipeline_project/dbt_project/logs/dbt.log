@@ -1,0 +1,30 @@
+[0m10:44:34.029448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FC8D367B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FC4AA6E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FC9EDBED0>]}
+
+
+============================== 10:44:34.034096 | 5ba5ac40-92de-4ec9-ad42-445efdd1a0fe ==============================
+[0m10:44:34.034096 [info ] [MainThread]: Running with dbt=1.10.11
+[0m10:44:34.034720 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt init finance_dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\Harsh\\.dbt'}
+[0m10:44:34.059915 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Harsh\.dbt
+[0m10:44:34.062609 [debug] [MainThread]: Starter project path: C:\Users\Harsh\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m10:44:34.090756 [info ] [MainThread]: 
+Your new dbt project "finance_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:44:34.091671 [info ] [MainThread]: Setting up your profile.
+[0m10:46:10.618562 [info ] [MainThread]: Profile finance_dbt written to C:\Users\Harsh\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m10:46:10.620685 [debug] [MainThread]: Command `dbt init` succeeded at 10:46:10.620535 after 96.80 seconds
+[0m10:46:10.621123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FC9EE75C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FC8D7AF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022FCAF42030>]}
+[0m10:46:10.621547 [debug] [MainThread]: Flushing usage events
+[0m10:46:11.868218 [debug] [MainThread]: An error was encountered while trying to flush usage events

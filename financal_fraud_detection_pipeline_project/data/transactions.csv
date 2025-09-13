@@ -1,0 +1,9 @@
+transaction_id,account_id,amount,merchant,timestamp,location
+1,101,250.50,Amazon,2025-09-01 10:15:00,Delhi
+2,101,15.75,Starbucks,2025-09-01 11:00:00,Delhi
+3,102,1000.00,Apple Store,2025-09-02 14:30:00,Mumbai
+4,103,200.00,Zomato,2025-09-02 19:45:00,Bangalore
+5,101,5000.00,Luxury Cars,2025-09-03 12:00:00,Delhi
+6,104,50.00,Uber,2025-09-03 22:10:00,Chennai
+7,102,12000.00,Jewelry Shop,2025-09-04 16:20:00,Mumbai
+8,103,75.00,McDonalds,2025-09-05 18:40:00,Bangalore
